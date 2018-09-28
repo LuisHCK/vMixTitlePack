@@ -54,6 +54,12 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="vMixInterop">
+      <HintPath>..\..\..\..\..\Program Files (x86)\vMix\vMixInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="vMixTitleLibrary">
+      <HintPath>..\..\..\..\..\Program Files (x86)\vMix\vMixTitleLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -63,6 +69,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="vComingUp\vComingUp.xaml.vb">
+      <DependentUpon>vComingUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vSlidingTitler\vSlidingTitler.xaml.vb">
+      <DependentUpon>vSlidingTitler.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +87,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="vComingUp\vComingUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vSlidingTitler\vSlidingTitler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Import Include="System.Linq" />
@@ -121,6 +141,15 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vSlidingTitler\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vComingUp\logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -2,7 +2,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:vMixTitles"
-    StartupUri="MainWindow.xaml">
+    StartupUri="vSlidingTitler\vSlidingTitler.xaml">
     <Application.Resources>
         
     </Application.Resources>
