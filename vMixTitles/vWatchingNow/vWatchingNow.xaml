@@ -1,0 +1,155 @@
+﻿<UserControl x:Class="vWatchingNow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mtl="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary"
+             mc:Ignorable="d" 
+             d:DesignHeight="768" d:DesignWidth="1280">
+    <UserControl.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1.092"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="-27.5"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="2.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="watching">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-0.922"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="45"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="3.433"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="showName">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-4.825"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-9.127"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="7.337"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="10.028"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Storyboard2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="-5.014"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="-209.709"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="-10.333"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="6.778"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="-264.729"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleX)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="8.565"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0.014"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
+                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="0.013"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle1">
+                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="watching">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="20.785"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="watching">
+                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="showName">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="13.857"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="showName">
+                <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+            <BeginStoryboard Storyboard="{StaticResource Storyboard2}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Grid>
+        <Rectangle x:Name="rectangle1" Fill="White" Height="90" Margin="65,65,0,0" Stroke="Transparent" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="550">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Rectangle x:Name="rectangle" Fill="#FF33759B" HorizontalAlignment="Left" Height="55" Margin="45,40,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="415" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:Name="watching" HorizontalAlignment="Left" Height="55" Margin="60,35,0,0" TextWrapping="Wrap" Text="You are Watching" VerticalAlignment="Top" Width="400" FontSize="42" FontWeight="Bold" Foreground="White" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="showName" Height="55" Margin="110,90,575,0" TextWrapping="Wrap" Text="TV Show Name" VerticalAlignment="Top" FontSize="42" FontWeight="Bold" Foreground="#FF2E2E2E" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+    </Grid>
+</UserControl>
