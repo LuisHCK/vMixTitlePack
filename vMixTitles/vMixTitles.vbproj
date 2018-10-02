@@ -87,6 +87,9 @@
     <Compile Include="vWatchingNow\vWatchingNow.xaml.vb">
       <DependentUpon>vWatchingNow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vWeather\vWeather.xaml.vb">
+      <DependentUpon>vWeather.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -120,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="vWatchingNow\vWatchingNow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="vWeather\vWeather.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
