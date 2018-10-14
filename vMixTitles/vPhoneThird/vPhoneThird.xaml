@@ -3,42 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:mtl="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary"
+             xmlns:my="clr-namespace:vMixTitleLibrary;assembly=vMixTitleLibrary"
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1280">
     <UserControl.Resources>
         <Storyboard x:Key="Storyboard1">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
-                <SplineDoubleKeyFrame KeyTime="0" Value="0.052"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0.99" KeySpline="0,0,0,1"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grid">
+                <SplineDoubleKeyFrame KeyTime="0" Value="-25.678"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="0" KeySpline="0,0,1,0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.267" Value="15.384"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0" KeySpline="0,0,1,0.46"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
-                <SplineDoubleKeyFrame KeyTime="0" Value="-338.692"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="-2.5" KeySpline="0,0,0,1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Title">
-                <SplineDoubleKeyFrame KeyTime="0" Value="-11.106"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="0" KeySpline="0,0,0,1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Phones">
-                <SplineDoubleKeyFrame KeyTime="0" Value="11.106"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.3" Value="0" KeySpline="0,1,1,1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Title">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle2">
                 <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="1" KeySpline="0,0,0,1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="1" KeySpline="0.52,0.01,1,1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Phones">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="rectangle">
                 <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.3" Value="1" KeySpline="0,1,1,1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="1" KeySpline="0.52,0.01,1,1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle1">
-                <SplineDoubleKeyFrame KeyTime="0" Value="0.032"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.3" Value="1.114" KeySpline="0,0,0,1"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="title">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="1" KeySpline="0.52,0.01,1,1"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle1">
-                <SplineDoubleKeyFrame KeyTime="0" Value="-284.444"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1.3" Value="33.617" KeySpline="0,0,0,1"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="content">
+                <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.6" Value="1" KeySpline="0.52,0.01,1,1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
@@ -48,66 +42,38 @@
         </EventTrigger>
     </UserControl.Triggers>
     <Grid>
-        <Rectangle x:Name="rectangle1" Height="71.808" Margin="162.945,0,529.26,95.008" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="rectangle2" Fill="#f2f2f2" Height="111.192" Margin="235,0,287.344,78" StrokeThickness="0" VerticalAlignment="Bottom" RadiusX="5" RadiusY="5">
+            <Rectangle.Effect>
+                <DropShadowEffect Direction="242" Opacity="0.45"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="rectangle" Fill="#22bd71" Height="72.403" Margin="178.969,0,550,188.951" StrokeThickness="0" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
-                    <SkewTransform/>
+                    <SkewTransform AngleX="47.316"/>
                     <RotateTransform/>
-                    <TranslateTransform/>
+                    <TranslateTransform X="13.59"/>
                 </TransformGroup>
             </Rectangle.RenderTransform>
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF009BBD" Offset="0"/>
-                    <GradientStop Color="#FF215D6A" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
         </Rectangle>
-
-        <Rectangle x:Name="rectangle" Height="65.282" Margin="162.945,0,393.625,166.816" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.RenderTransform>
+        <TextBlock x:Name="title" Height="55" Margin="260,0,575,208.196" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" FontSize="48" FontWeight="Bold" Foreground="White"/>
+        <TextBlock x:Name="content" Height="110" Margin="260,0,276.687,78" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" FontSize="29.333" FontWeight="Bold"/>
+        <Grid x:Name="grid" HorizontalAlignment="Left" Height="214.626" Margin="31.031,0,0,61.012" VerticalAlignment="Bottom" Width="214.626" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </Rectangle.RenderTransform>
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF0077BD" Offset="0"/>
-                    <GradientStop Color="#FF015D93" Offset="1"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-
-        <Ellipse Fill="#FF0168A6" HorizontalAlignment="Left" Height="176.259" Margin="51.967,0,0,75.423" VerticalAlignment="Bottom" Width="176.259"/>
-        <Image x:Name="phoneIcon" HorizontalAlignment="Left" Margin="78.079,0,0,101.536" Source="/vMixTitles;component/phoneIcon.png" Stretch="Fill" Width="124.035" Height="124.034" VerticalAlignment="Bottom">
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <TextBlock x:Name="Title" Height="58.753" Margin="247.81,0,393.625,173.345" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" FontSize="38" FontWeight="Bold" Foreground="White" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <TextBlock x:Name="Phones" Height="78.337" Margin="247.81,0,529.26,95.008" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Foreground="White" FontSize="29.333" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-
+            </Grid.RenderTransform>
+            <Rectangle x:Name="rectangle1" Fill="#FFF24C4B" HorizontalAlignment="Left" Height="214.626" StrokeThickness="0" VerticalAlignment="Bottom" Width="214.626" RadiusX="10" RadiusY="10">
+                <Rectangle.Effect>
+                    <DropShadowEffect FrameworkElement.FlowDirection="RightToLeft" Direction="213" Opacity="0.605"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Image x:Name="image" Source="Phone-icon.png"/>
+        </Grid>
     </Grid>
 </UserControl>

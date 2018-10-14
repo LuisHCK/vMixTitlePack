@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="vNewsThird"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:vMixTitles"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <Rectangle Margin="162.382,0,14.073,42.423" Height="72.53" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-90" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF0064B0"/>
+                    <GradientStop Color="#FF5EBDFD" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Grid HorizontalAlignment="Right" Height="117.128" Margin="0,0,40.369,20.772" VerticalAlignment="Bottom" Width="152.75">
+            <Rectangle Fill="#FF7E7E7E" HorizontalAlignment="Left" Height="22.807" VerticalAlignment="Top" Width="66.035" RenderTransformOrigin="0.5,0.5" Margin="0.393,0.194,0,0">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-16.743"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="9.983"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle Fill="#FF7E7E7E" HorizontalAlignment="Right" Height="21.512" Margin="0,0,8.359,0.097" VerticalAlignment="Bottom" Width="66.035" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-16.743"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="9.983"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Rectangle Margin="34.577,0.214,0,0" Fill="#FFE0E0E0" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="9.257"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-11.204"/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

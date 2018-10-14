@@ -12,22 +12,22 @@
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Width="100.852"/>
                 <Rectangle Fill="#FF2323FF" HorizontalAlignment="Left" Height="31.923" VerticalAlignment="Top" Width="100.852"/>
                 <TextBlock x:Name="dayName1" Text="DAY" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
-                <TextBlock x:Name="tempDegree1" Text="00°" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="#FF343434" Margin="0,36.923,0,0"/>
+                <Label x:Name="tempDegree1" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold"  Foreground="#FF343434" Margin="0,36.923,0,0" Content="00°"/>
                 <TextBlock x:Name="weatherIcon1" Text="&#xF00D;" FontFamily="Weather Icons" HorizontalAlignment="Left" Height="97.562" Margin="0,73.846,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="64" TextAlignment="Center" Foreground="#FFE25293"/>
             </Grid>
             <Grid Margin="116.464,10,113.479,8.258">
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Width="100.852"/>
                 <Rectangle Fill="#FF2323FF" HorizontalAlignment="Left" Height="31.923" VerticalAlignment="Top" Width="100.852"/>
                 <TextBlock x:Name="dayName2" Text="DAY" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
-                <TextBlock x:Name="tempDegree2" Text="00°" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="#FF343434" Margin="0,36.923,0,0"/>
                 <TextBlock x:Name="weatherIcon2" Text="&#xF00D;" FontFamily="Weather Icons" HorizontalAlignment="Left" Height="97.562" Margin="0,73.846,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="64" TextAlignment="Center" Foreground="#FFE25293"/>
+                <Label x:Name="tempDegree2" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold"  Foreground="#FF343434" Margin="0.306,36.923,2.036,0" Content="00°"/>
             </Grid>
             <Grid Margin="0,10,7.015,8.258" HorizontalAlignment="Right" Width="101.464">
                 <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Width="100.852"/>
                 <Rectangle Fill="#FF2323FF" HorizontalAlignment="Left" Height="31.923" VerticalAlignment="Top" Width="100.852"/>
                 <TextBlock x:Name="dayName3" Text="DAY" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="White"/>
-                <TextBlock x:Name="tempDegree3" Text="00°" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold" TextAlignment="Center" Foreground="#FF343434" Margin="0,36.923,0,0"/>
                 <TextBlock x:Name="weatherIcon3" Text="&#xF00D;" FontFamily="Weather Icons" HorizontalAlignment="Left" Height="97.562" Margin="0,73.846,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100.852" FontSize="64" TextAlignment="Center" Foreground="#FFE25293"/>
+                <Label x:Name="tempDegree3" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="100.852" FontSize="24" FontWeight="Bold"  Foreground="#FF343434" Margin="0.306,36.923,0.306,0" Content="00°"/>
             </Grid>
         </Grid>
     </Grid>

@@ -34,7 +34,7 @@
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="name">
                 <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:1" Value="1" KeySpline="0,0,0.51,1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="time">
                 <SplineDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -96,7 +96,7 @@
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="name">
                 <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
-                <SplineDoubleKeyFrame KeyTime="0:0:0.4" Value="0" KeySpline="0,0,0,1"/>
+                <SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0" KeySpline="0,0,0.4,1"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
                 <SplineDoubleKeyFrame KeyTime="0" Value="1"/>
